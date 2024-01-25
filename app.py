@@ -10,7 +10,7 @@ with open("classifier.pkl", "rb") as f:
 
 @app.route("/welcome", methods = ["GET"])           #decorator to define additional part of the URL.
 def welcome():                                      #function of additional part.
-    return "Welcome to the page"
+    return {'message': "Welcome to the page"}
 
 # required info - gender, married, credit_history, applicant_income, loan_amount.
 
@@ -55,3 +55,10 @@ def template():
 	"applicant_income": "<Numeric Salary>",
 	"loan_amount": "Numeric loan amount",
 	"credit_history": "Cleared Debts / Uncleared Debts"}
+
+
+def sum_something(a,b):
+    return a+b
+
+def sub_something(a,b):
+    return a-b
