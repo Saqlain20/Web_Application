@@ -6,7 +6,7 @@ FROM python:3.8-alpine
 WORKDIR /flask-loan-app
 #working directory inside the container
 
-RUN python3 -m pip install --upgrade pip
+RUN python -m pip install --upgrade pip
 
 COPY requirements.txt requirements.txt
 
