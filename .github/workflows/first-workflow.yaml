@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout              #checkout means make a copy of the code from the repo
-        uses: actions/checkput@v4  # some of the inbuilt functions, provided by github for doing some common tasks.   
+        uses: actions/checkout@v4  # some of the inbuilt functions, provided by github for doing some common tasks.   
 
       - name: Install Python-3
         uses: actions/setup-python@v4
