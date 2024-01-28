@@ -12,7 +12,7 @@ COPY requirements.txt requirements.txt
 
 RUN pip3 install -r requirements.txt
 
-COPY .  .
+COPY . .
 # Copy everything from the current directory to the PWD (Present Working Directory) inside the container
 
 # CMD ["python", "-m","flask", "run", "--host=0.0.0.0"]
